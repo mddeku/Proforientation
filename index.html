@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бектурганов Динмухаммед — Профориентация в медицине</title>
+  <meta name="description" content="Помогаю школьникам поступить в мед и врачам выбрать резидентуру. Консультации, менторство, сопровождение.">
+  <meta name="keywords" content="профориентация, медицина, поступление в мед, резидентура, Казахстан, консультация врача, уролог">
+  <meta property="og:title" content="Бектурганов Динмухаммед — Профориентация в медицине">
+  <meta property="og:description" content="Помогаю школьникам поступить в мед и врачам выбрать резидентуру.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Dr. Bekturganov</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#how">Как это работает</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+        <button class="btn btn-primary btn-sm" onclick="openBooking()">Записаться</button>
+      </div>
+      <button class="burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-orb hero-bg-orb-1"></div>
+    <div class="hero-bg-orb hero-bg-orb-2"></div>
+    <div class="container hero-grid">
+      <div class="hero-content fade-up">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Врач-уролог, ментор, исследователь
+        </div>
+        <h1>Помогаю выбрать <span class="gradient-text">путь в медицине</span></h1>
+        <p class="hero-sub">Профориентация для школьников и стратегия карьеры для врачей. Индивидуальный подход, основанный на реальном опыте.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg pulse-cta" onclick="openBooking()">Записаться на консультацию</button>
+          <a href="#segments" class="btn btn-outline btn-lg">Узнать больше</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><svg class="icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 100+ консультаций</div>
+          <div class="hero-stat"><svg class="icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> IFOM #1 результат</div>
+        </div>
+      </div>
+      <div class="hero-card-wrap fade-in hide-mobile">
+        <div class="hero-card-bg"></div>
+        <div class="hero-card">
+          <div class="hero-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+          <h3>Бектурганов Динмухаммед</h3>
+          <p class="text-muted">Резидент уролог-андролог</p>
+          <p class="text-primary text-sm">Медицинский университет Астана</p>
+        </div>
+        <div class="float-badge float-badge-left fade-in"><p class="text-xs text-muted">IFOM BSE</p><p class="text-primary fw-bold">#1 результат</p></div>
+        <div class="float-badge float-badge-right fade-in"><p class="text-xs text-muted">Награда</p><p class="text-primary fw-bold">Минздрав РК</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGMENTS -->
+  <section id="segments" class="section bg-white">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Кому я помогаю</h2>
+        <p class="text-muted">Выберите вашу ситуацию, и я помогу найти оптимальное решение</p>
+      </div>
+      <div class="grid-2">
+        <div class="segment-card segment-students anim">
+          <div class="segment-icon bg-primary-light"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+          <h3>Для школьников</h3>
+          <p class="segment-tagline gradient-text">«Хочу поступить в мед»</p>
+          <p class="text-muted">Помогу определиться с выбором профессии, подготовиться к поступлению и пройти весь путь от школьника до студента-медика.</p>
+          <ul class="check-list">
+            <li>Выбор медицинского вуза</li>
+            <li>Подготовка к ЕНТ по профильным предметам</li>
+            <li>Стратегия поступления на грант</li>
+            <li>Реальные истории из студенческой жизни</li>
+          </ul>
+          <a href="#services-students" class="btn btn-primary">Подробнее →</a>
+        </div>
+        <div class="segment-card segment-doctors anim">
+          <div class="segment-icon bg-accent-light"><svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div>
+          <h3>Для врачей</h3>
+          <p class="segment-tagline text-accent">«Выбираю резидентуру»</p>
+          <p class="text-muted">Помогу выбрать специальность, составить стратегию поступления в резидентуру и построить карьерный план в медицине.</p>
+          <ul class="check-list check-list-accent">
+            <li>Подбор специальности по вашим сильным сторонам</li>
+            <li>Стратегия поступления в резидентуру</li>
+            <li>Карьерные перспективы каждой специальности</li>
+            <li>Инсайдерский опыт из реальной практики</li>
+          </ul>
+          <a href="#services-doctors" class="btn btn-accent">Подробнее →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section bg-surface">
+    <div class="container">
+      <div class="grid-2 items-center">
+        <div class="about-photo anim">
+          <div class="about-photo-bg"></div>
+          <div class="about-photo-card">
+            <div class="about-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+            <p class="text-muted text-sm" style="font-style:italic">Фото будет добавлено</p>
+          </div>
+        </div>
+        <div class="anim">
+          <span class="section-label">Обо мне</span>
+          <h2>Бектурганов Динмухаммед</h2>
+          <p class="text-muted mb-6">Резидент уролог-андролог, выпускник Медицинского университета Астана. Прошёл интернатуру по общей практике, сейчас углублённо изучаю урологию и андрологию. Автор научных работ, активный участник международных олимпиад и хирургического клуба «Veritas».</p>
+          <div class="achievement-list">
+            <div class="achievement"><span class="achievement-emoji">🏆</span><div><strong>Лучший результат IFOM BSE</strong><p class="text-muted text-sm">Наивысший балл среди всех участников (декабрь 2024)</p></div></div>
+            <div class="achievement"><span class="achievement-emoji">🏅</span><div><strong>Награда Минздрава РК</strong><p class="text-muted text-sm">Отмечен за выдающиеся достижения в медицине</p></div></div>
+            <div class="achievement"><span class="achievement-emoji">🔬</span><div><strong>Научная деятельность</strong><p class="text-muted text-sm">Автор научных публикаций и участник исследований</p></div></div>
+            <div class="achievement"><span class="achievement-emoji">🏥</span><div><strong>Клинический опыт</strong><p class="text-muted text-sm">Реальный опыт в экстренной медицине, включая спасение жизни</p></div></div>
+            <div class="achievement"><span class="achievement-emoji">🌍</span><div><strong>Международные олимпиады</strong><p class="text-muted text-sm">Организатор и участник международных медицинских олимпиад</p></div></div>
+            <div class="achievement"><span class="achievement-emoji">⚔️</span><div><strong>Хирургический клуб «Veritas»</strong><p class="text-muted text-sm">Активный член клуба практической хирургии</p></div></div>
+          </div>
+          <button class="btn btn-primary btn-lg mt-8" onclick="openBooking()">Записаться на консультацию</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section bg-white">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Услуги</h2>
+        <p class="text-muted">Индивидуальные программы для каждого этапа вашего пути в медицине</p>
+      </div>
+
+      <!-- Students -->
+      <div id="services-students" class="mb-16">
+        <div class="services-label anim"><div class="services-label-icon bg-primary-light"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><h3>Для абитуриентов</h3></div>
+        <div class="grid-3 anim">
+          <div class="price-card">
+            <h4>Разовая консультация</h4>
+            <p class="price text-primary">10 000 ₸</p>
+            <p class="text-muted text-sm">Ответы на все ваши вопросы о поступлении в медицинский вуз за одну сессию.</p>
+            <ul class="check-list check-list-sm"><li>60 минут онлайн-консультации</li><li>Анализ вашей ситуации</li><li>Рекомендации по подготовке</li><li>Ответы на вопросы</li><li>Запись консультации</li></ul>
+            <button class="btn btn-outline w-full" onclick="openBooking('student_consultation')">Записаться</button>
+          </div>
+          <div class="price-card price-card-popular">
+            <div class="popular-badge">Популярное</div>
+            <h4>Профориентация</h4>
+            <p class="price text-primary">По запросу</p>
+            <p class="text-muted text-sm">Глубокий анализ ваших способностей и подбор оптимального направления в медицине.</p>
+            <ul class="check-list check-list-sm"><li>Тестирование способностей</li><li>Анализ интересов и сильных сторон</li><li>Подбор специализации</li><li>Дорожная карта поступления</li><li>2 сессии по 60 минут</li></ul>
+            <button class="btn btn-primary w-full" onclick="openBooking('student_orientation')">Записаться</button>
+          </div>
+          <div class="price-card">
+            <h4>Полное сопровождение</h4>
+            <p class="price text-primary">По запросу</p>
+            <p class="text-muted text-sm">Комплексная поддержка от принятия решения до зачисления в медицинский вуз.</p>
+            <ul class="check-list check-list-sm"><li>Всё из «Профориентации»</li><li>Стратегия подготовки к ЕНТ</li><li>Помощь с документами</li><li>Подготовка к интервью</li><li>Поддержка до зачисления</li></ul>
+            <button class="btn btn-outline w-full" onclick="openBooking('student_full')">Записаться</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctors -->
+      <div id="services-doctors" class="mb-16">
+        <div class="services-label anim"><div class="services-label-icon bg-accent-light"><svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div><h3>Для врачей</h3></div>
+        <div class="grid-3 anim">
+          <div class="price-card">
+            <h4>Консультация по резидентуре</h4>
+            <p class="price text-accent">15 000 ₸</p>
+            <p class="text-muted text-sm">Разбор вашей ситуации и подробные рекомендации по выбору резидентуры.</p>
+            <ul class="check-list check-list-sm check-list-accent"><li>60 минут онлайн-консультации</li><li>Анализ вашего профиля</li><li>Рекомендации по специальности</li><li>Стратегия поступления</li><li>Запись консультации</li></ul>
+            <button class="btn btn-outline-accent w-full" onclick="openBooking('doctor_consultation')">Записаться</button>
+          </div>
+          <div class="price-card price-card-popular-accent">
+            <div class="popular-badge bg-accent">Популярное</div>
+            <h4>Подбор специальности</h4>
+            <p class="price text-accent">По запросу</p>
+            <p class="text-muted text-sm">Комплексный подбор специальности на основе ваших навыков, интересов и целей.</p>
+            <ul class="check-list check-list-sm check-list-accent"><li>Тестирование и анализ профиля</li><li>Обзор специальностей</li><li>Карьерные перспективы</li><li>Финансовый прогноз</li><li>2 сессии по 60 минут</li></ul>
+            <button class="btn btn-accent w-full" onclick="openBooking('doctor_specialty')">Записаться</button>
+          </div>
+          <div class="price-card">
+            <h4>Индивидуальная стратегия</h4>
+            <p class="price text-accent">По запросу</p>
+            <p class="text-muted text-sm">Полная стратегия карьерного развития в медицине с персональным сопровождением.</p>
+            <ul class="check-list check-list-sm check-list-accent"><li>Всё из «Подбор специальности»</li><li>Персональный план развития</li><li>Помощь с документами</li><li>Подготовка к собеседованию</li><li>Поддержка в течение 3 месяцев</li></ul>
+            <button class="btn btn-outline-accent w-full" onclick="openBooking('doctor_strategy')">Записаться</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telegram subscription -->
+      <div class="telegram-card anim">
+        <div class="telegram-card-inner">
+          <div class="telegram-icon"><svg viewBox="0 0 24 24" fill="#229ED9" width="40" height="40"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></div>
+          <div class="telegram-text">
+            <h3>Закрытый Telegram-канал</h3>
+            <p class="text-muted">Эксклюзивный контент о медицине, поступлении и карьере. Инсайды, которых нет в открытом доступе.</p>
+            <p class="price text-telegram">3 000 ₸ / мес</p>
+          </div>
+          <button class="btn btn-telegram" onclick="openBooking('telegram_subscription')">Подписаться</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section bg-surface">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Как это работает</h2>
+        <p class="text-muted">Простой и понятный процесс от первого шага до результата</p>
+      </div>
+      <div class="steps-grid anim">
+        <div class="step">
+          <div class="step-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><span class="step-num">01</span></div>
+          <h4>Заполняете анкету</h4>
+          <p class="text-muted text-sm">Расскажите о себе, своих целях и вопросах через удобную форму записи</p>
+        </div>
+        <div class="step">
+          <div class="step-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg><span class="step-num">02</span></div>
+          <h4>Онлайн-консультация</h4>
+          <p class="text-muted text-sm">Проводим подробную консультацию в удобном для вас формате</p>
+        </div>
+        <div class="step">
+          <div class="step-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span class="step-num">03</span></div>
+          <h4>Индивидуальный план</h4>
+          <p class="text-muted text-sm">Получаете персональную стратегию действий с чёткими шагами</p>
+        </div>
+        <div class="step">
+          <div class="step-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg><span class="step-num">04</span></div>
+          <h4>Сопровождение</h4>
+          <p class="text-muted text-sm">Поддерживаю на каждом этапе до достижения вашей цели</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY TRUST ME -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Почему мне доверяют</h2>
+        <p class="text-muted">Реальный опыт и доказанные результаты</p>
+      </div>
+      <div class="grid-4 anim">
+        <div class="trust-card"><span class="trust-emoji">🎯</span><h4>Проверенные знания</h4><p class="text-muted text-sm">Лучший результат IFOM BSE среди всех участников — это доказательство глубоких медицинских знаний</p></div>
+        <div class="trust-card"><span class="trust-emoji">🔑</span><h4>Инсайдерский опыт</h4><p class="text-muted text-sm">Я прошёл этот путь сам — от абитуриента до резидента. Знаю систему изнутри</p></div>
+        <div class="trust-card"><span class="trust-emoji">📚</span><h4>Теория + Практика</h4><p class="text-muted text-sm">Совмещаю научную работу с реальной клинической практикой, включая экстренные случаи</p></div>
+        <div class="trust-card"><span class="trust-emoji">🤝</span><h4>Индивидуальный подход</h4><p class="text-muted text-sm">Каждый случай уникален. Я не даю шаблонных советов — только персональные стратегии</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section bg-gradient">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Что вы получите</h2>
+        <p style="color:rgba(255,255,255,.8)">Конкретные результаты, которые изменят вашу карьеру</p>
+      </div>
+      <div class="grid-3 anim">
+        <div class="result-card">
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <h4>Избежите ошибок</h4>
+          <p>Не потеряете годы на неправильно выбранную специальность. Примете осознанное решение на основе реальной информации.</p>
+        </div>
+        <div class="result-card">
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <h4>Сэкономите время</h4>
+          <p>Получите чёткий план действий вместо месяцев поисков и сомнений. Каждый шаг будет продуманным.</p>
+        </div>
+        <div class="result-card">
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+          <h4>Повысите шансы</h4>
+          <p>Увеличите вероятность поступления на грант и в желаемую резидентуру благодаря правильной стратегии.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12 anim"><button class="btn btn-white btn-lg" onclick="openBooking()">Начать сейчас</button></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Отзывы</h2>
+        <p class="text-muted">Что говорят те, кто уже прошёл консультацию</p>
+      </div>
+      <div class="grid-3 anim">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text-muted review-text">&laquo;Благодаря консультации я поняла, что медицина — это моё. Динмухаммед помог разобраться в процессе поступления и составил чёткий план. Поступила на грант!&raquo;</p>
+          <div class="reviewer"><div class="reviewer-avatar">А</div><div><strong>Айгерим М.</strong><p class="text-muted text-xs">Абитуриент, поступила в НМУ</p></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text-muted review-text">&laquo;Долго не мог определиться со специальностью. После консультации всё встало на свои места. Очень ценные инсайты, которых нет в открытом доступе.&raquo;</p>
+          <div class="reviewer"><div class="reviewer-avatar">Д</div><div><strong>Даурен К.</strong><p class="text-muted text-xs">Интерн, выбрал хирургию</p></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text-muted review-text">&laquo;Как родитель, я переживала за выбор сына. Консультация развеяла все сомнения. Профессиональный подход и реальные знания системы.&raquo;</p>
+          <div class="reviewer"><div class="reviewer-avatar">М</div><div><strong>Мадина С.</strong><p class="text-muted text-xs">Мама абитуриента</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section bg-white">
+    <div class="container container-sm">
+      <div class="section-header anim">
+        <h2>Частые вопросы</h2>
+        <p class="text-muted">Ответы на самые популярные вопросы</p>
+      </div>
+      <div class="anim">
+        <h3 class="faq-group-title text-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg> Для абитуриентов</h3>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Сложно ли учиться в медицинском?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Медицинское образование требует серьёзной самоотдачи. Объём информации большой, но при правильном подходе и мотивации это абсолютно реально. На консультации я расскажу, как организовать учёбу эффективно и какие навыки развивать с самого начала.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Как поступить на грант?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Для поступления на грант нужен высокий балл ЕНТ по профильным предметам (биология, химия). Важна также стратегия выбора вуза и специальности. На консультации разберём вашу ситуацию и составим план подготовки.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Какой вуз лучше выбрать?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Это зависит от ваших целей, бюджета и региона. У каждого медицинского вуза Казахстана есть свои сильные стороны. На консультации подберём оптимальный вариант именно для вас.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Стоит ли вообще идти в медицину?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Медицина — это призвание, которое требует любви к делу. Если вас тянет помогать людям и интересует наука о здоровье — однозначно да. На профориентации мы определим, подходит ли вам эта профессия.</div></div>
+
+        <h3 class="faq-group-title text-accent mt-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg> Для врачей</h3>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Как выбрать специальность для резидентуры?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Выбор специальности — это баланс между вашими интересами, навыками, образом жизни и финансовыми ожиданиями. На консультации мы проведём анализ по всем параметрам и подберём оптимальные варианты.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Какая специальность самая прибыльная?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Доход зависит не только от специальности, но и от региона, формы практики и ваших навыков. Хирургические специальности, кардиология, урология традиционно в топе. Но важнее выбрать то, что вам действительно нравится.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Сложно ли поступить в резидентуру?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Конкурс зависит от специальности и вуза. Правильная подготовка и стратегия значительно повышают шансы. На консультации разберём конкурсную ситуацию и подготовим вас к поступлению.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Можно ли сменить специальность после интернатуры?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-a">Да, это возможно. Многие врачи меняют направление. Важно понимать процесс и сделать осознанный выбор. На консультации обсудим все варианты и последствия.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section bg-surface">
+    <div class="container">
+      <div class="section-header anim">
+        <h2>Свяжитесь со мной</h2>
+        <p class="text-muted">Выберите удобный способ связи или запишитесь на консультацию прямо сейчас</p>
+      </div>
+      <div class="grid-2 max-w-4xl mx-auto">
+        <div class="anim">
+          <div class="contact-links">
+            <a href="https://t.me/gon_frix1" target="_blank" class="contact-link"><div class="contact-link-icon bg-telegram-light"><svg viewBox="0 0 24 24" fill="#229ED9" width="28" height="28"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></div><div><strong>Telegram</strong><p class="text-muted text-sm">Быстрый ответ в мессенджере</p></div></a>
+            <a href="https://wa.me/77001234567" target="_blank" class="contact-link"><div class="contact-link-icon bg-whatsapp-light"><svg viewBox="0 0 24 24" fill="#25D366" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div><div><strong>WhatsApp</strong><p class="text-muted text-sm">Напишите в WhatsApp</p></div></a>
+            <a href="https://instagram.com/doctorbekturganov" target="_blank" class="contact-link"><div class="contact-link-icon bg-instagram-light"><svg viewBox="0 0 24 24" fill="#E4405F" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div><div><strong>Instagram</strong><p class="text-muted text-sm">@doctorbekturganov</p></div></a>
+          </div>
+        </div>
+        <div class="anim">
+          <div class="cta-card-final">
+            <h3>Готовы начать свой путь?</h3>
+            <p>Запишитесь на консультацию прямо сейчас. Выберите удобную дату и время, и я помогу вам сделать правильный выбор.</p>
+            <button class="btn btn-white btn-lg w-full" onclick="openBooking()">Записаться на консультацию</button>
+            <div class="cta-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Ответ в течение 24ч</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Онлайн формат</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div><p class="footer-brand">Dr. Bekturganov</p><p class="text-muted text-sm">Профориентация в медицине</p></div>
+      <div class="footer-socials">
+        <a href="https://t.me/gon_frix1" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+        <a href="https://instagram.com/doctorbekturganov" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      </div>
+      <p class="text-muted text-sm">&copy; 2026 Все права защищены</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA -->
+  <button class="floating-cta pulse-cta" onclick="openBooking()" title="Записаться">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+  </button>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeBooking(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modalTitle">Выберите услугу</h3>
+        <button class="modal-close" onclick="closeBookingForce()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
